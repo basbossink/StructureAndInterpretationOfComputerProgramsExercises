@@ -1,4 +1,5 @@
 (require-extension test)
+(test-begin "1.01")
 (test 10 10)
 (test 12 (+ 5 3 4))
 (test 8 (- 9 1))
@@ -19,3 +20,4 @@
                ((< a b) b)
                (else -1))
             (+ a 1)))
+(test-end)
