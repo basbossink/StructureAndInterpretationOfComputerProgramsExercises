@@ -5,7 +5,7 @@
   (cond ((and (<= x y) (<= x z)) (sum-of-squares y z))
         ((and (<= y x) (<= y z)) (sum-of-squares x z))
         ((and (<= z x) (<= z y)) (sum-of-squares x y))))
-(test-begin "1.03")
+(test-begin "1.3")
 (test 13 (sol 1 2 3))
 (test 4 (sol 0 2 0))
 (test 1 (sol (- 1) 1 0))
