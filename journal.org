@@ -1,0 +1,5 @@
+#+TITLE Journal 
+* <2012-05-02 wo>  
+  Skipping 1.19 can't seem to find the correct
+  formulation of p' and q'.
+
