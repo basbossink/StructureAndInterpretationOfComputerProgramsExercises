@@ -20,24 +20,6 @@
 
 (define current-test-comparator (make-parameter (lambda (expected actual) #t)))
 
-(define (timed-prime-test n)
-  (newline)
-  (display n)
-  (start-prime-test n (runtime)))
-
-(define (start-prime-test n start-time)
-  (if (prime? n)
-      (report-prime (- (runtime) start-time))))
-
-(define (report-prime elapsed-time)
-  (display " *** ")
-  (display elapsed-time))
-
-(define (report-prime-untimed prime)
-  (newline)
-  (display "found prime: ")
-  (display prime))
-
 (define (search-for-prime start end)
   (define (next current) (+ current 2))
   (define (search-for-prime-rec end current-trial acc)
